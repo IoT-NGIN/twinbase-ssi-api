@@ -9,10 +9,10 @@ from pyld import jsonld
 app = FastAPI(title="IAA-configurator", version="0.0.1")
 
 
-IAA_CONF_FILE = os.getenv("IAA_CONF_FILE", "IAA.conf")
-OWNER_DID = os.getenv("OWNER_DID", "did:self:1234oiuerhg98043n9hve")
-PROXY_PASS = os.getenv("PROXY_PASS", "http://127.0.0.1:8000")
-CONFIGURATOR_ADDRESS = os.getenv("CONFIGURATOR_ADDRESS")
+IAA_CONF_FILE = os.environ["IAA_CONF_FILE"]
+OWNER_DID = os.environ["OWNER_DID"]
+PROXY_PASS = os.environ["PROXY_PASS"]
+CONFIGURATOR_ADDRESS = os.environ["CONFIGURATOR_ADDRESS"]
 
 LD_ACCESS_REQUIREMENTS = "https://twinschema.org/accessRequirements"
 LD_LOCATION = "http://www.w3.org/2003/01/geo/wgs84_pos#location"
