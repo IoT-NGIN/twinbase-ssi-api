@@ -1,0 +1,5 @@
+.env
+.venv
+*.egg-info
+.mypy_cache
+iaa_config
