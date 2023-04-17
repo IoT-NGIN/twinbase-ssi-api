@@ -16,4 +16,4 @@ RUN python -m pip install -r requirements.txt
 COPY iaa.py .
 
 # Start app with uvicorn
-CMD uvicorn --host 0.0.0.0 --port 8000 iaa:app
+CMD uvicorn --host 0.0.0.0 --port 9001 iaa:app

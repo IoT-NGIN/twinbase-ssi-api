@@ -24,7 +24,7 @@ services:
       OWNER_DID: ${IAA_OWNER_DID}
       IAA_CONF_FILE: /iaa_config/iaa.conf
       PROXY_PASS: http://twinbase-api:8000
-      CONFIGURATOR_ADDRESS: http://iaa-configurator:8000
+      CONFIGURATOR_ADDRESS: http://iaa-configurator:9001
     volumes:
       - ./iaa_config:/iaa_config
 
