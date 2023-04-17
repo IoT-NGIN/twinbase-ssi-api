@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "ms-python.isort",
+        "bungcip.better-toml",
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+    ]
+}
