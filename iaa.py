@@ -1,10 +1,10 @@
-import os
 import json
+import os
 
-import requests
-from pyld import jsonld
 import dtweb
+import requests
 from fastapi import FastAPI
+from pyld import jsonld
 
 app = FastAPI(title="IAA-configurator", version="0.0.1")
 

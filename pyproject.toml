@@ -7,13 +7,10 @@ dependencies = ["fastapi", "uvicorn", "dtweb", "requests", "PyLD"]
 [build-system]
 requires = ["setuptools", "wheel"]
 
-[tool.setuptools.packages.find]
-where = ["vocabulary-generator", "redis-client", "sparql-client"]
-
 # Development settings
 
 [project.optional-dependencies]
-dev = ["black", "mypy", "types-requests"]
+dev = ["black", "mypy", "isort", "types-requests"]
 
 [tool.black]
 line-length = 88
