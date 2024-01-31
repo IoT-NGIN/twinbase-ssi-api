@@ -66,3 +66,42 @@ docker compose down
 ```
 docker image prune --all
 ```
+
+## Development
+
+Prerequisites
+- Python 3.7 or above
+- `make`
+  - If make is not available you may check [Makefile](Makefile) for the commands
+
+### Create virtual environment and install requirements
+
+```sh
+# Create and activate virtual environment (recommended)
+python3 -m venv .venv
+source .venv/bin/activate
+
+# Install pip-tools to manage requirements
+make pip-tools
+
+# Install requirements to virtual enviroment with pip-tools
+make sync
+```
+
+### Build and run Twinbase API with docker
+```
+docker compose build iaa-configurator && docker compose run --rm iaa-configurator
+```
+(CTRL+C to quit)
+
+Remove unused images
+```
+docker image prune --all
+```
+
+### Edit python requirements
+1. Edit the requirements in [pyproject.toml](pyproject.toml)
+2. Then run:
+```sh
+make update-dependencies
+```
